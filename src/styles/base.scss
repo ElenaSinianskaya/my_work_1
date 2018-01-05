@@ -1,0 +1,74 @@
+// my_template_styles
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+body{
+  font-family: 'Oswald', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+.container{
+  width:100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+// my_template_styles_end
+
+$section-main-dark-color:#11343a;
+
+
+.card-animation{
+  width: 234px;
+}
+
+.circles-wrp{
+  background-color: yellow;
+}
+.card-icon:hover{
+  fill: yellow;
+}

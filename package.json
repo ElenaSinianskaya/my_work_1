@@ -1,0 +1,21 @@
+{
+  "name": "smak_lena",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elena Sinianskaya",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.4.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "circles": "^0.2.0",
+    "gulp-scss": "^1.4.0"
+  },
+  "description": ""
+}

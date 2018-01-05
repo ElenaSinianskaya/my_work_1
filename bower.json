@@ -1,0 +1,20 @@
+{
+  "name": "Elena",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Elena Sinianskaya"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "responsive-tabs": "^1.6.3"
+  }
+}
