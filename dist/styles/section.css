@@ -21,7 +21,7 @@
   .section-foreground {
     padding: 30px 0;
     position: relative;
-    z-index: 9999;
+    z-index: 1000;
     overflow: hidden; }
 
 .header {
