@@ -8,7 +8,7 @@
 }
 
 body{
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -34,7 +34,7 @@ table{
 }
 
 .container{
-  width:100%;
+  max-width: 1181px; //(1166px+padding:0 15px;)
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -56,18 +56,93 @@ table{
 	justify-content: space-around;
   flex-wrap: wrap;
 }
-
 // my_template_styles_end
 
-$section-main-dark-color:#11343a;
+// variables:
+
+$section-main-title-primary-color:#000000;
+
+$button-primary-bg:#ffe600;
+$button-primary-color:#131316;
+$button-secondary-bg:#ffe600;
+$button-secondary-color:#ffffff;
+
+$anchor-bg:#ffe600;
+$anchor-color:#ffffff;
+
+$section-title-primary-color:#000000;
+$section-title-secondary-color:#ffffff;
+$section-title-rarest-color:#ffe600;
+
+$section-pre-title-primary-color:#515151;
+
+$text-primary-color:#707070;
+$text-secondary-color:#ffffff;
+
+$nav-link-primary-color:#ffffff;
+$nav-link-is-active-color:#ffe600;
+$nav-before-item-bg:#ffe600;
+
+$card-title-primary-color:#131316;
+$card-title-secondary-color:#ffffff;
+$card-title-rarest-color:#ffe600;
+
+@mixin text_styles($color, $font-size, $font-weight, $text-transfortm){
+  color:$color;
+  font-size:$font-size;
+  font-weight:$font-weight;
+  text-transform:$text-transfortm;
+}
 
 
+.header{
+  &-body{
+    &-content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100px;
+    }
+    &-right{
+      .header-nav{
+        .nav-item{
+          padding-left: 52px;
+          position: relative;
+          &:before{
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: $nav-before-item-bg;
+            position: absolute;
+            left: 27%;
+            top: 50%;
+            transform: translate(0%,-50%);
+          }
+          &:first-child:before{
+            display: none;
+          }
+          .nav-link{
+            @include text_styles($nav-link-primary-color, 14px, 700, uppercase);
+            &.is-active{
+              color: $nav-link-is-active-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// circles
 .card-animation{
   width: 234px;
 }
 
 .circles-wrp{
-  background-color: yellow;
+  background-color: $section-title-rarest-color;
 }
 .card-icon:hover{
   fill: yellow;

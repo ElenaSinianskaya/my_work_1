@@ -6,7 +6,7 @@
   -o-box-sizing: border-box; }
 
 body {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -27,7 +27,7 @@ table {
   border-collapse: collapse; }
 
 .container {
-  width: 100%;
+  max-width: 1181px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -46,11 +46,40 @@ table {
   justify-content: space-around;
   flex-wrap: wrap; }
 
+.header-body-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px; }
+
+.header-body-right .header-nav .nav-item {
+  padding-left: 52px;
+  position: relative; }
+  .header-body-right .header-nav .nav-item:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #ffe600;
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    transform: translate(0%, -50%); }
+  .header-body-right .header-nav .nav-item:first-child:before {
+    display: none; }
+  .header-body-right .header-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .header-body-right .header-nav .nav-item .nav-link.is-active {
+      color: #ffe600; }
+
 .card-animation {
   width: 234px; }
 
 .circles-wrp {
-  background-color: yellow; }
+  background-color: #ffe600; }
 
 .card-icon:hover {
   fill: yellow; }

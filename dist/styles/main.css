@@ -1,4 +1,90 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; }
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse; }
+
+.container {
+  max-width: 1181px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.header-body-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px; }
+
+.header-body-right .header-nav .nav-item {
+  padding-left: 52px;
+  position: relative; }
+  .header-body-right .header-nav .nav-item:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #ffe600;
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    transform: translate(0%, -50%); }
+  .header-body-right .header-nav .nav-item:first-child:before {
+    display: none; }
+  .header-body-right .header-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .header-body-right .header-nav .nav-item .nav-link.is-active {
+      color: #ffe600; }
+
+.card-animation {
+  width: 234px; }
+
+.circles-wrp {
+  background-color: #ffe600; }
+
+.card-icon:hover {
+  fill: yellow; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -572,63 +658,6 @@ template {
   .r-tabs .r-tabs-accordion-title {
     display: block; } }
 
-* {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box; }
-
-body {
-  font-family: 'Oswald', 'Arial', sans-serif;
-  margin: 0;
-  padding: 0; }
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover; }
-
-ul, li {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-a {
-  text-decoration: none; }
-
-table {
-  border-collapse: collapse; }
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px; }
-
-.wrapper {
-  width: 100%;
-  position: relative;
-  overflow: hidden; }
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
-.card-animation {
-  width: 234px; }
-
-.circles-wrp {
-  background-color: yellow; }
-
-.card-icon:hover {
-  fill: yellow; }
-
 @font-face {
   font-family: 'TitilliumText22L-Thin';
   src: url("../fonts/TitilliumText22L-Thin/TitilliumText22L-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L-Thin/TitilliumText22L-Thin.otf") format("opentype"), url("../fonts/TitilliumText22L-Thin/TitilliumText22L-Thin.woff") format("woff"), url("../fonts/TitilliumText22L-Thin/TitilliumText22L-Thin.ttf") format("truetype"), url("../fonts/TitilliumText22L-Thin/TitilliumText22L-Thin.svg#TitilliumText22L-Thin") format("svg");
@@ -637,10 +666,6 @@ table {
 
 textarea {
   resize: vertical; }
-
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 15px; } }
 
 .section {
   position: relative;
@@ -667,3 +692,11 @@ textarea {
     position: relative;
     z-index: 9999;
     overflow: hidden; }
+
+.header {
+  background: #122b30; }
+
+.section-main {
+  background: #11343a; }
+  .section-main-content {
+    background: #122b30; }

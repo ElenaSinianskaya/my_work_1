@@ -23,3 +23,11 @@
     position: relative;
     z-index: 9999;
     overflow: hidden; }
+
+.header {
+  background: #122b30; }
+
+.section-main {
+  background: #11343a; }
+  .section-main-content {
+    background: #122b30; }

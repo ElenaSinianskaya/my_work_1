@@ -30,3 +30,24 @@
     overflow: hidden;
   }
 }
+
+$header-bg:#122b30;
+
+$section-main-primary-bg:#11343a;
+$section-main-secondary-bg:#122b30;
+
+
+$section-primary-bg:#ffffff;
+$section-secondary-bg:#12191e;
+$section-rarest-bg:#131316;
+
+.header{
+  background: $header-bg;
+}
+
+.section-main{
+  background: $section-main-primary-bg;
+  &-content{
+    background: $section-main-secondary-bg;
+  }
+}
