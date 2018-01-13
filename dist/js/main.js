@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+  // menu
+  $('.open').on('click', function () {
+      $('nav').addClass('active');
+  });
+
+  $('.cancel').on('click', function () {
+      $('nav').removeClass('active');
+  })
+
+  // sliders
   $('.slider-clients').slick({
     // arrows:false
   });

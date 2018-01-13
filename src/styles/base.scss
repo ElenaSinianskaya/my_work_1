@@ -94,7 +94,6 @@ $card-title-rarest-color:#ffe600;
   text-transform:$text-transfortm;
 }
 
-
 .header{
   &-body{
     &-content{
@@ -146,4 +145,17 @@ $card-title-rarest-color:#ffe600;
 }
 .card-icon:hover{
   fill: yellow;
+}
+
+// adaptive-menu:
+.cancel{
+  width: 30px;
+  height: 30px;
+  background: red;
+}
+
+.open{
+  width: 30px;
+  height: 30px;
+  background: blue;
 }
