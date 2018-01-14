@@ -29,5 +29,5 @@
 
 .section-main {
   background: #11343a; }
-  .section-main-content {
-    background: #122b30; }
+  .section-main .section-foreground {
+    min-height: 949px; }

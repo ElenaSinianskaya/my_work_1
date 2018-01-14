@@ -75,6 +75,19 @@ table {
     .header-body-right .header-nav .nav-item .nav-link.is-active {
       color: #ffe600; }
 
+.section-main-content {
+  background: #122b30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section-main-content .main-title {
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
+
 .card-animation {
   width: 234px; }
 

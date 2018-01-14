@@ -59,7 +59,7 @@ table{
 // my_template_styles_end
 
 // variables:
-
+$section-main-secondary-bg:#122b30;
 $section-main-title-primary-color:#000000;
 
 $button-primary-bg:#ffe600;
@@ -75,6 +75,8 @@ $section-title-secondary-color:#ffffff;
 $section-title-rarest-color:#ffe600;
 
 $section-pre-title-primary-color:#515151;
+
+$main-title-color:#ffffff;
 
 $text-primary-color:#707070;
 $text-secondary-color:#ffffff;
@@ -93,6 +95,7 @@ $card-title-rarest-color:#ffe600;
   font-weight:$font-weight;
   text-transform:$text-transfortm;
 }
+
 
 .header{
   &-body{
@@ -133,6 +136,19 @@ $card-title-rarest-color:#ffe600;
   }
 }
 
+.section-main{
+  &-content{
+    background: $section-main-secondary-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .main-title{
+        @include text_styles($main-title-color, 65px, 700, uppercase);
+        text-align: center;
+    }
+  }
+}
 
 
 // circles
