@@ -137,18 +137,32 @@ $card-title-rarest-color:#ffe600;
 }
 
 .section-main{
-  &-content{
+  position: relative;
+  .section-body-content{
     background: $section-main-secondary-bg;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-height: 364px;
+    width: 100%;
     .main-title{
-        @include text_styles($main-title-color, 65px, 700, uppercase);
+        @include text_styles($main-title-color, 63px, 700, uppercase);
+        max-width: 777px;
         text-align: center;
     }
   }
+  .section-footer-content{
+    .anchor{
+      position: absolute;
+      bottom: 0px;
+      right: 50%;
+      transform: translate(50%, 0%);
+    }
+  }
 }
+
+
 
 
 // circles
