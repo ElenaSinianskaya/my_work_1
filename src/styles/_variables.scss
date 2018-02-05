@@ -1,0 +1,52 @@
+$header-bg:#122b30;
+$header-adaptive-color:#ffe600;
+
+$section-primary-bg:#ffffff;
+$section-secondary-bg:#12191e;
+$section-rarest-bg:#131316;
+
+$section-main-primary-bg:#11343a;
+$section-main-secondary-bg:#122b30;
+$section-main-title-primary-color:#000000;
+
+$button-primary-bg:#ffe600;
+$button-primary-color:#131316;
+$button-secondary-bg:#ffe600;
+$button-secondary-color:#ffffff;
+
+$anchor-bg:#ffe600;
+$anchor-color:#ffffff;
+
+$section-title-primary-color:#000000;
+$section-title-secondary-color:#ffffff;
+$section-title-rarest-color:#ffe600;
+
+$section-pre-title-primary-color:#515151;
+
+$main-title-color:#ffffff;
+
+$text-primary-color:#707070;
+$text-secondary-color:#ffffff;
+
+$nav-link-primary-color:#ffffff;
+$nav-link-is-active-color:#ffe600;
+$nav-before-item-bg:#ffe600;
+
+$card-title-primary-color:#131316;
+$card-title-secondary-color:#ffffff;
+$card-title-rarest-color:#ffe600;
+
+$icon-primary-color:#ffffff;
+$icon-services-background:#ffe600;
+$icon-services-background-hover:transparent;
+$icon-services-border-color:transparent;
+$icon-services-border-color-hover:#131316;
+
+
+
+@mixin text_styles($color, $font-size, $font-weight, $text-transfortm){
+  color:$color;
+  font-size:$font-size;
+  font-weight:$font-weight;
+  text-transform:$text-transfortm;
+}

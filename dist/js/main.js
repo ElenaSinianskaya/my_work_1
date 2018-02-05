@@ -5,7 +5,7 @@ $(document).ready(function(){
       $('nav').addClass('active');
   });
 
-  $('.cancel').on('click', function () {
+  $('.close').on('click', function () {
       $('nav').removeClass('active');
   })
 
