@@ -64,10 +64,19 @@ table{
   @include text_styles($section-pre-title-primary-color, 16px, 400, uppercase);
 }
 
-.small-title{
+// .small-title{
+//   @include text_styles($section-title-primary-color, 16px, 400, uppercase);
+// }
 
+// .primary-small-title{
+//   color:$section-title-primary-color;
+// }
+.secondary-small-title{
+  color:red;
 }
-
+// .rarest-small-title{
+//   color:$section-title-rarest-color;
+// }
 .header{
   &-body{
     &-content{
