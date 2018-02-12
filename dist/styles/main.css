@@ -19,7 +19,10 @@ img {
 ul, li {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 a {
   text-decoration: none; }
@@ -92,6 +95,9 @@ table {
   text-transform: uppercase;
   margin-bottom: 0; }
 
+.section-inverse .smaller-title {
+  color: #ffffff; }
+
 .decorate {
   position: relative; }
   .decorate:after {
@@ -100,13 +106,24 @@ table {
     height: 3px;
     content: '';
     background-color: #ffe600;
-    bottom: 0;
+    bottom: 3px;
     left: 50%;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0); }
+
+.list-item {
+  margin-bottom: 17px; }
+
+.nav-item:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #ffe600;
+  position: absolute;
+  top: 50%; }
 
 .header-body-content {
   display: flex;
@@ -129,13 +146,7 @@ table {
   padding-left: 55px;
   position: relative; }
   .header-body-right .header-nav .nav-item:before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background: #ffe600;
-    position: absolute;
     left: 27%;
-    top: 50%;
     transform: translate(0%, -50%); }
   .header-body-right .header-nav .nav-item:first-child:before {
     display: none; }
@@ -178,33 +189,75 @@ table {
     right: 50%;
     transform: translate(50%, 0%); }
 
-.section-services .section-heading-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .section-services .section-body .list {
-  margin-top: 45px; }
-  .section-services .section-body .list-services {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .section-services .section-body .list-services .list-item {
-      width: 23%;
-      min-width: 170px;
-      text-align: center; }
-      .section-services .section-body .list-services .list-item .card-icon {
-        display: inline-flex;
-        padding: 33px;
-        background-color: #ffe600;
-        border: 1px solid transparent;
-        border-radius: 60px; }
-        .section-services .section-body .list-services .list-item .card-icon .icon {
-          font-size: 40px; }
-        .section-services .section-body .list-services .list-item .card-icon:hover {
-          background-color: transparent;
-          border: 1px solid #131316;
+  margin-top: 42px; }
+  .section-services .section-body .list .list-item {
+    width: 23%;
+    min-width: 170px;
+    text-align: center; }
+    .section-services .section-body .list .list-item .card-icon {
+      display: inline-flex;
+      padding: 33px;
+      background-color: #ffe600;
+      border: 1px solid transparent;
+      border-radius: 60px; }
+      .section-services .section-body .list .list-item .card-icon .icon {
+        font-size: 40px; }
+      .section-services .section-body .list .list-item .card-icon:hover {
+        background-color: transparent;
+        border: 1px solid #131316; }
+        .section-services .section-body .list .list-item .card-icon:hover .icon {
           color: #ffe600; }
+
+.section-tools .section-heading-content .section-text .text {
+  margin-top: 0; }
+
+.section-tools .list-tools .list-item {
+  width: 15%;
+  text-align: center;
+  position: relative;
+  margin-top: 45px; }
+  .section-tools .list-tools .list-item .card-img {
+    object-fit: cover;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 0);
+    -webkit-transform: translate(50%, 0);
+    -moz-transform: translate(50%, 0);
+    -ms-transform: translate(50%, 0);
+    -o-transform: translate(50%, 0); }
+    .section-tools .list-tools .list-item .card-img img {
+      max-height: 45px;
+      width: 45px; }
+  .section-tools .list-tools .list-item .card-title {
+    margin-top: 70px; }
+  .section-tools .list-tools .list-item .card-description .text {
+    margin: 20px 0;
+    line-height: 22px; }
+
+.section-portfolio .section-heading-pre-title .pre-title {
+  margin-top: 33px; }
+
+.section-portfolio .section-body .portfolio-nav {
+  justify-content: center;
+  margin: 30px 0; }
+  .section-portfolio .section-body .portfolio-nav .nav-item {
+    position: relative;
+    margin: 12px 26px; }
+    .section-portfolio .section-body .portfolio-nav .nav-item:before {
+      left: -30%;
+      transform: translate(-50%, -50%); }
+    .section-portfolio .section-body .portfolio-nav .nav-item:first-child:before {
+      display: none; }
+  .section-portfolio .section-body .portfolio-nav .nav-link {
+    color: #515151;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase; }
+    .section-portfolio .section-body .portfolio-nav .nav-link.is-active {
+      color: #ffe600; }
 
 .card-animation {
   width: 234px; }
@@ -828,6 +881,10 @@ i {
 textarea {
   resize: vertical; }
 
+@media screen and (max-width: 1024px) {
+  .section-tools .list-tools .list-item {
+    width: 27%; } }
+
 @media screen and (max-width: 768px) {
   .header-body-right .nav {
     display: none; }
@@ -871,6 +928,10 @@ textarea {
   .header .nav {
     display: flex; } }
 
+@media screen and (max-width: 558px) {
+  .section-tools .list-tools .list-item {
+    width: 45%; } }
+
 @media screen and (max-width: 485px) {
   .section-main .main-title {
     font-size: 38px !important;
@@ -885,9 +946,15 @@ textarea {
     width: 80%;
     margin: 0 auto; } }
 
+@media screen and (max-width: 350px) {
+  .section-tools .list-tools .list-item {
+    margin: 0 auto;
+    width: 70%; } }
+
 .section {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #ffffff; }
   .section-background img {
     position: absolute;
     left: 0;
@@ -916,6 +983,11 @@ textarea {
 .header {
   background: #122b30; }
 
+.section-heading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .section-main {
   background: #11343a; }
   .section-main .section-foreground {
@@ -928,7 +1000,8 @@ textarea {
       justify-content: center;
       padding: 30px 0; }
 
-.section-services {
-  background-color: #ffffff; }
-  .section-services .section-foreground {
-    min-height: 590px; }
+.section-services .section-foreground {
+  min-height: 590px; }
+
+.section-tools .section-foreground {
+  min-height: 470px; }

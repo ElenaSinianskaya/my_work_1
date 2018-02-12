@@ -1,6 +1,7 @@
 .section{
   position: relative;
   overflow: hidden;
+  background: $section-primary-bg;
     &-background img{
     position: absolute;
     left: 0;
@@ -37,6 +38,12 @@
   background: $header-bg;
 }
 
+.section-heading-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-main{
   background: $section-main-primary-bg;
   .section-foreground{
@@ -53,15 +60,13 @@
 }
 
 .section-services{
-  background-color: $section-primary-bg;
   .section-foreground{
     min-height: 590px;
-    .section-body{
-      // min-height: 590px;
-    }
   }
 }
 
 .section-tools{
-
+  .section-foreground{
+    min-height: 470px;
+  }
 }

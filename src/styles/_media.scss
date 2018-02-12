@@ -5,7 +5,13 @@
 
 
 @media screen and (max-width:1024px){
-
+  .section-tools{
+    .list-tools{
+      .list-item{
+        width: 27%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:768px){
@@ -81,6 +87,15 @@
   }
 }
 
+@media screen and (max-width:558px){
+.section-tools{
+  .list-tools{
+    .list-item{
+      width: 45%;
+      }
+    }
+  }
+}
 
 @media screen and (max-width:485px){
   .section-main{
@@ -111,3 +126,14 @@
     }
   }
 }
+
+@media screen and (max-width:350px){
+  .section-tools{
+    .list-tools{
+      .list-item{
+        margin: 0 auto;
+        width: 70%;
+        }
+      }
+    }
+  }

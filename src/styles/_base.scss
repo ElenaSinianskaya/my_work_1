@@ -23,6 +23,9 @@ ul, li{
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 a{
@@ -100,6 +103,10 @@ table{
   margin-bottom: 0;
 }
 
+.section-inverse .smaller-title{
+  color: $card-title-inverse-color;
+}
+
 .decorate{
   position: relative;
   &:after{
@@ -108,13 +115,30 @@ table{
     height: 3px;
     content: '';
     background-color: $element-line-after-bg;
-    bottom:0;
+    bottom:3px;
     left: 50%;
   	transform: translate(-50%,0);
   	-webkit-transform: translate(-50%,0);
   	-moz-transform: translate(-50%,0);
   	-ms-transform: translate(-50%,0);
   	-o-transform: translate(-50%,0);
+  }
+}
+
+.list-item{
+  margin-bottom: 17px;
+}
+
+.nav-item{
+  &:before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: $nav-before-item-bg;
+  position: absolute;
+  top: 50%;
+  &:first-child:before{
+    display: none;
   }
 }
 
@@ -146,17 +170,8 @@ table{
           padding-left: 55px;
           position: relative;
           &:before{
-            content: '';
-            width: 5px;
-            height: 5px;
-            background: $nav-before-item-bg;
-            position: absolute;
             left: 27%;
-            top: 50%;
             transform: translate(0%,-50%);
-          }
-          &:first-child:before{
-            display: none;
           }
           .nav-link{
             @include text_styles($nav-link-primary-color, 14px, 700, uppercase);
@@ -207,35 +222,27 @@ table{
 }
 
 .section-services{
-  .section-heading-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .section-body{
     .list{
-      margin-top: 45px;
-      &-services{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .list-item{
-          width: 23%;
-          min-width: 170px;
-          text-align: center;
-          .card-icon{
-            display: inline-flex;
-            padding: 33px;
-            background-color: $icon-services-background;
-            border: 1px solid $icon-services-border-color;
-            border-radius: 60px;
-            .icon{
-              font-size: 40px;
-            }
-            &:hover{
-              background-color:$icon-services-background-hover;
-              border: 1px solid $icon-services-border-color-hover;
-              color: $icon-services-color-hover;
+      margin-top: 42px;
+      .list-item{
+        width: 23%;
+        min-width: 170px;
+        text-align: center;
+        .card-icon{
+          display: inline-flex;
+          padding: 33px;
+          background-color: $icon-services-background;
+          border: 1px solid $icon-services-border-color;
+          border-radius: 60px;
+          .icon{
+            font-size: 40px;
+          }
+          &:hover{
+            background-color:$icon-services-background-hover;
+            border: 1px solid $icon-services-border-color-hover;
+            & .icon{
+              color:$icon-services-color-hover;
             }
           }
         }
@@ -245,7 +252,75 @@ table{
 }
 
 .section-tools{
+  .section-heading-content{
+    .section-text{
+      .text{
+        margin-top: 0;
+      }
+    }
+  }
+  .list-tools{
+    .list-item{
+      width: 15%;
+      text-align: center;
+      position: relative;
+      margin-top: 45px;
+      .card-img{
+        object-fit: cover;
+        margin: 0 auto;
+        position: absolute;
+        top:0;
+        right: 50%;
+        transform: translate(50%,0);
+      	-webkit-transform: translate(50%,0);
+      	-moz-transform: translate(50%,0);
+      	-ms-transform: translate(50%,0);
+      	-o-transform: translate(50%,0);
+        img{
+          max-height: 45px;
+          width: 45px;
+        }
+      }
+      .card-title{
+        margin-top: 70px;
+      }
 
+      .card-description{
+        .text{
+          margin: 20px 0;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+.section-portfolio{
+  .section-heading-pre-title{
+    .pre-title{
+      margin-top: 33px;
+    }
+  }
+  .section-body{
+    .portfolio-nav{
+      justify-content: center;
+      margin: 30px 0;
+      .nav-item{
+        position: relative;
+        margin: 12px 26px;
+        &:before{
+          left: -30%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .nav-link{
+        @include text_styles($nav-link-portfolio-primary-color, 16px, 400, uppercase);
+        &.is-active{
+          color: $nav-link-is-active-color;
+        }
+      }
+    }
+  }
 }
 
 
