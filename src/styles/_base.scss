@@ -137,9 +137,14 @@ table{
   background: $nav-before-item-bg;
   position: absolute;
   top: 50%;
+  }
   &:first-child:before{
     display: none;
   }
+}
+
+.nav-link:hover{
+  opacity: 0.7;
 }
 
 .header{
@@ -177,9 +182,6 @@ table{
             @include text_styles($nav-link-primary-color, 14px, 700, uppercase);
             &.is-active{
               color: $nav-link-is-active-color;
-            }
-            &:hover{
-              opacity: 0.7;
             }
           }
           .close{
@@ -235,6 +237,7 @@ table{
           background-color: $icon-services-background;
           border: 1px solid $icon-services-border-color;
           border-radius: 60px;
+          cursor: pointer;
           .icon{
             font-size: 40px;
           }
