@@ -55,6 +55,15 @@
       }
     }
   }
+  .section-services{
+    .section-body{
+      .list-services{
+        .list-item{
+          width:45%;
+        }
+      }
+    }
+  }
 }
 
 
@@ -88,6 +97,16 @@
     .anchor{
       .arrow{
         padding: 12px 17px;
+      }
+    }
+  }
+  .section-services{
+    .section-body{
+      .list-services{
+        .list-item{
+          width:80%;
+          margin: 0 auto;
+        }
       }
     }
   }

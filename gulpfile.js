@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var sass = require('gulp-sass');
+// var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 
 
@@ -35,6 +36,11 @@ gulp.task('js', function(){
   gulp.src('./src/js/*.js')
   .pipe(gulp.dest('./dist/js'))
 });
+
+// gulp.task('default', function () {
+//     return gulp.src('app/tmp', {read: false})
+//         .pipe(clean());
+// });
 
 gulp.task('browser-sync', function() {
     browserSync.init({

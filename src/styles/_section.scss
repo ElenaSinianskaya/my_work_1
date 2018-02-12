@@ -28,6 +28,9 @@
     z-index: 1000;
     overflow: hidden;
   }
+  &-inverse{
+    background: $section-inverse-bg;
+  }
 }
 
 .header{
@@ -50,10 +53,15 @@
 }
 
 .section-services{
-  background-color: orange;
+  background-color: $section-primary-bg;
   .section-foreground{
+    min-height: 590px;
     .section-body{
-      min-height: 590px;
+      // min-height: 590px;
     }
   }
+}
+
+.section-tools{
+
 }

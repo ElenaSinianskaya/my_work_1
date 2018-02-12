@@ -62,21 +62,62 @@ table{
 }
 .pre-title{
   @include text_styles($section-pre-title-primary-color, 16px, 400, uppercase);
+  margin-bottom: 0;
 }
 
-// .small-title{
-//   @include text_styles($section-title-primary-color, 16px, 400, uppercase);
-// }
+.small-title{
+  @include text_styles($section-title-primary-color, 30px, 700, uppercase);
+}
 
-// .primary-small-title{
-//   color:$section-title-primary-color;
-// }
+.primary-small-title{
+  color:$section-title-primary-color;
+}
+
 .secondary-small-title{
   color:red;
 }
-// .rarest-small-title{
-//   color:$section-title-rarest-color;
-// }
+
+.rarest-small-title{
+  color:$section-title-rarest-color;
+}
+
+.section-text{
+  max-width: 960px;
+  text-align: center;
+}
+
+.text{
+  @include text_styles($text-primary-color, 16px, 300, null);
+  line-height: 24px;
+}
+
+.section-inverse .text{
+  color: $text-inverse-color;
+}
+
+.smaller-title{
+  @include text_styles($card-title-primary-color, 20px, 700, uppercase);
+  margin-bottom: 0;
+}
+
+.decorate{
+  position: relative;
+  &:after{
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    content: '';
+    background-color: $element-line-after-bg;
+    bottom:0;
+    left: 50%;
+  	transform: translate(-50%,0);
+  	-webkit-transform: translate(-50%,0);
+  	-moz-transform: translate(-50%,0);
+  	-ms-transform: translate(-50%,0);
+  	-o-transform: translate(-50%,0);
+  }
+}
+
 .header{
   &-body{
     &-content{
@@ -172,32 +213,39 @@ table{
     align-items: center;
   }
   .section-body{
-    // display: flex;
-    .list-services{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      .list-item{
-        width: 23%;
-        min-width: 170px;
-        text-align: center;
-        .card-icon{
-          display: inline-flex;
-          padding: 33px;
-          background-color: $icon-services-background;
-          border: 1px solid $icon-services-border-color;
-          border-radius: 60px;
-          .icon{
-            font-size: 40px;
-          }
-          &:hover{
-            background-color:$icon-services-background-hover;
-            border: 1px solid $icon-services-border-color-hover;
+    .list{
+      margin-top: 45px;
+      &-services{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .list-item{
+          width: 23%;
+          min-width: 170px;
+          text-align: center;
+          .card-icon{
+            display: inline-flex;
+            padding: 33px;
+            background-color: $icon-services-background;
+            border: 1px solid $icon-services-border-color;
+            border-radius: 60px;
+            .icon{
+              font-size: 40px;
+            }
+            &:hover{
+              background-color:$icon-services-background-hover;
+              border: 1px solid $icon-services-border-color-hover;
+              color: $icon-services-color-hover;
+            }
           }
         }
       }
     }
   }
+}
+
+.section-tools{
+
 }
 
 

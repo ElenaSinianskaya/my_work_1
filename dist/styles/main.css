@@ -54,7 +54,59 @@ table {
   color: #515151;
   font-size: 16px;
   font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.small-title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
   text-transform: uppercase; }
+
+.primary-small-title {
+  color: #000000; }
+
+.secondary-small-title {
+  color: red; }
+
+.rarest-small-title {
+  color: #ffe600; }
+
+.section-text {
+  max-width: 960px;
+  text-align: center; }
+
+.text {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.section-inverse .text {
+  color: #ffffff; }
+
+.smaller-title {
+  color: #131316;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.decorate {
+  position: relative; }
+  .decorate:after {
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    content: '';
+    background-color: #ffe600;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0); }
 
 .header-body-content {
   display: flex;
@@ -131,25 +183,28 @@ table {
   flex-direction: column;
   align-items: center; }
 
-.section-services .section-body .list-services {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .section-services .section-body .list-services .list-item {
-    width: 23%;
-    min-width: 170px;
-    text-align: center; }
-    .section-services .section-body .list-services .list-item .card-icon {
-      display: inline-flex;
-      padding: 33px;
-      background-color: #ffe600;
-      border: 1px solid transparent;
-      border-radius: 60px; }
-      .section-services .section-body .list-services .list-item .card-icon .icon {
-        font-size: 40px; }
-      .section-services .section-body .list-services .list-item .card-icon:hover {
-        background-color: transparent;
-        border: 1px solid #131316; }
+.section-services .section-body .list {
+  margin-top: 45px; }
+  .section-services .section-body .list-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .section-services .section-body .list-services .list-item {
+      width: 23%;
+      min-width: 170px;
+      text-align: center; }
+      .section-services .section-body .list-services .list-item .card-icon {
+        display: inline-flex;
+        padding: 33px;
+        background-color: #ffe600;
+        border: 1px solid transparent;
+        border-radius: 60px; }
+        .section-services .section-body .list-services .list-item .card-icon .icon {
+          font-size: 40px; }
+        .section-services .section-body .list-services .list-item .card-icon:hover {
+          background-color: transparent;
+          border: 1px solid #131316;
+          color: #ffe600; }
 
 .card-animation {
   width: 234px; }
@@ -804,7 +859,9 @@ textarea {
     height: 600px;
     align-items: center; }
     .section-main .section-foreground .title {
-      max-width: 80%; } }
+      max-width: 80%; }
+  .section-services .section-body .list-services .list-item {
+    width: 45%; } }
 
 @media screen and (min-width: 769px) {
   .header .close {
@@ -823,7 +880,10 @@ textarea {
     .section-main .primary-button .button {
       padding: 15px; }
   .section-main .anchor .arrow {
-    padding: 12px 17px; } }
+    padding: 12px 17px; }
+  .section-services .section-body .list-services .list-item {
+    width: 80%;
+    margin: 0 auto; } }
 
 .section {
   position: relative;
@@ -850,6 +910,8 @@ textarea {
     position: relative;
     z-index: 1000;
     overflow: hidden; }
+  .section-inverse {
+    background: #131316; }
 
 .header {
   background: #122b30; }
@@ -867,6 +929,6 @@ textarea {
       padding: 30px 0; }
 
 .section-services {
-  background-color: orange; }
-  .section-services .section-foreground .section-body {
+  background-color: #ffffff; }
+  .section-services .section-foreground {
     min-height: 590px; }
