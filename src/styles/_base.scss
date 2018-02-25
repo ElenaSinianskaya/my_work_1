@@ -70,6 +70,11 @@ table{
 
 .small-title{
   @include text_styles($section-title-primary-color, 30px, 700, uppercase);
+  margin: 20px 0 26px;
+}
+
+.middle-title{
+  @include text_styles($card-middle-title-primary-color, 25px, 400, null);
 }
 
 .primary-small-title{
@@ -154,7 +159,7 @@ table{
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      min-height: 100px;
+      min-height: 98px;
     }
     &-left{
       .logo{
@@ -204,6 +209,7 @@ table{
     align-items: center;
     justify-content:space-evenly;
     min-height: 364px;
+    padding: 15px 0 23px;
     width: 100%;
     .main-title{
         @include text_styles($main-title-color, 63px, 700, uppercase);
@@ -327,7 +333,45 @@ table{
 }
 
 
-
+.card-expand{
+  &.r-tabs-panel {
+      padding: 20px 0 !important;
+  }
+  .card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .card-left{
+      .card-img{
+        width: 670px;
+        height: 440px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .card-right{
+      width: 40%;
+      margin-left: 29px;
+      .card-close{
+        i{
+          display:block;
+          color: $card-expand-icon-close-color;
+          font-size: 20px;
+          position: absolute;
+          top:0;
+          right: 0;
+        }
+      }
+      .card-description{
+        max-width: 362px;
+      }
+    }
+  }
+}
 
 // circles
 .card-animation{
