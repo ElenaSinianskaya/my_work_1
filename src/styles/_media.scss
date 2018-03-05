@@ -14,6 +14,27 @@
       }
     }
   }
+  .card-expand{
+    .card-content{
+      flex-wrap:wrap;
+      justify-content: center;
+      .card-right{
+        width: 100%;
+        text-align: center;
+        .card-title{
+          max-width: 80%;
+          margin: 0 auto;
+          .middle-title{
+            margin: 5px 0px;
+          }
+        }
+        .card-description{
+          max-width:90%;
+          margin: 10px auto 25px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width:768px){
@@ -68,6 +89,16 @@
       .list-services{
         .list-item{
           width:45%;
+        }
+      }
+    }
+  }
+  .card-expand{
+    .card-content{
+      .card-left{
+        .card-img{
+          width:520px;
+          height: 360px;
         }
       }
     }

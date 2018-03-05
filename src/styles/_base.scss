@@ -66,6 +66,7 @@ table{
 .pre-title{
   @include text_styles($section-pre-title-primary-color, 16px, 400, uppercase);
   margin-bottom: 0;
+  margin-top: 32px;
 }
 
 .small-title{
@@ -262,6 +263,9 @@ table{
 
 .section-tools{
   .section-heading-content{
+    .small-title{
+      margin: 28px 0 22px;
+    }
     .section-text{
       .text{
         margin-top: 0;
@@ -360,7 +364,12 @@ table{
     }
     .card-right{
       width: 40%;
-      margin-left: 29px;
+      max-height: 440px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
       .card-close{
         i{
           display:block;
@@ -372,14 +381,20 @@ table{
         }
       }
       .card-title{
+        max-width: 362px;
+        overflow: hidden;
         .middle-title{
-          margin: 0
+          margin: 5px 0px 20px;
         }
       }
       .card-description{
+        overflow: hidden;
         max-width: 362px;
+        max-height: 230px;
+        margin: 0 0 20px;
         .text{
-          margin-bottom: 20px;
+          margin: 0;
+          line-height: 25px;
         }
       }
     }
@@ -389,13 +404,18 @@ table{
 .list-anchors{
   display: flex;
   justify-content: center;
+  margin-top: 43px !important;
   .list-item{
     position: relative;
     min-width: 320px;
     width: calc(100%/6);
+    .card-img{
+      height:250px;
+      border:1px solid black;
+    }
     img{
       width: 100%;
-      height: 250px;
+      height: 100%;
       object-fit: cover;
     }
     .card-hover{
