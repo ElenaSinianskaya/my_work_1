@@ -63,6 +63,7 @@ table{
 .icon{
   color:$icon-primary-color;
 }
+
 .pre-title{
   @include text_styles($section-pre-title-primary-color, 16px, 400, uppercase);
   margin-bottom: 0;
@@ -88,6 +89,10 @@ table{
 
 .rarest-small-title{
   color:$section-title-rarest-color;
+}
+
+.subtitle{
+  @include text_styles($subtitle-hover-pimary-color, 16px, 400, uppercase);
 }
 
 .section-text{
@@ -231,6 +236,11 @@ table{
 }
 
 .section-services{
+  .section-heading{
+    .small-title{
+      margin: 18px 0 26px;
+    }
+  }
   .section-body{
     .list{
       margin-top: 42px;
@@ -339,8 +349,29 @@ table{
       }
     }
   }
+  .section-footer{
+    padding: 25px 0 10px;
+    .section-footer-content{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      min-height: 330px;
+      .section-anchor{
+        margin-bottom: 38px;
+      }
+      .small-title{
+        margin-bottom: 8px;
+      }
+      .secondary-button{
+        margin-top: 38px;
+        .button{
+          padding: 19px 38px;
+        }
+      }
+    }
+  }
 }
-
 
 .card-expand{
   &.r-tabs-panel {
@@ -385,6 +416,7 @@ table{
         overflow: hidden;
         .middle-title{
           margin: 5px 0px 20px;
+          letter-spacing: 1px;
         }
       }
       .card-description{
@@ -420,15 +452,32 @@ table{
     }
     .card-hover{
       display: none;
+      .card-title{
+        .middle-title{
+          margin-bottom: 0;
+          margin-top: 35px;
+          letter-spacing: 1px;
+          color: $card-middle-title-secondary-color;
+        }
+      }
+      .card-subtitle{
+        .subtitle{
+          margin-top: 12px;
+        }
+      }
     }
+
     &:hover .card-hover{
-      display:block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       top:0;
       left: 0;
       width:100%;
       height: 100%;
-      background-color: red;
+      background-color: $card-anchor-hover-primary-bg;
     }
   }
 }

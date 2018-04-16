@@ -82,6 +82,12 @@ table {
 .rarest-small-title {
   color: #ffe600; }
 
+.subtitle {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 .section-text {
   max-width: 960px;
   text-align: center; }
@@ -199,6 +205,9 @@ table {
     right: 50%;
     transform: translate(50%, 0%); }
 
+.section-services .section-heading .small-title {
+  margin: 18px 0 26px; }
+
 .section-services .section-body .list {
   margin-top: 42px; }
   .section-services .section-body .list .list-item {
@@ -274,6 +283,23 @@ table {
     .section-portfolio .section-body .portfolio-nav .nav-link.is-active {
       color: #ffe600; }
 
+.section-portfolio .section-footer {
+  padding: 25px 0 10px; }
+  .section-portfolio .section-footer .section-footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 330px; }
+    .section-portfolio .section-footer .section-footer-content .section-anchor {
+      margin-bottom: 38px; }
+    .section-portfolio .section-footer .section-footer-content .small-title {
+      margin-bottom: 8px; }
+    .section-portfolio .section-footer .section-footer-content .secondary-button {
+      margin-top: 38px; }
+      .section-portfolio .section-footer .section-footer-content .secondary-button .button {
+        padding: 19px 38px; }
+
 .card-expand.r-tabs-panel {
   padding: 20px 0 !important; }
 
@@ -308,7 +334,8 @@ table {
       max-width: 362px;
       overflow: hidden; }
       .card-expand .card-content .card-right .card-title .middle-title {
-        margin: 5px 0px 20px; }
+        margin: 5px 0px 20px;
+        letter-spacing: 1px; }
     .card-expand .card-content .card-right .card-description {
       overflow: hidden;
       max-width: 362px;
@@ -335,14 +362,24 @@ table {
       object-fit: cover; }
     .list-anchors .list-item .card-hover {
       display: none; }
+      .list-anchors .list-item .card-hover .card-title .middle-title {
+        margin-bottom: 0;
+        margin-top: 35px;
+        letter-spacing: 1px;
+        color: #ffffff; }
+      .list-anchors .list-item .card-hover .card-subtitle .subtitle {
+        margin-top: 12px; }
     .list-anchors .list-item:hover .card-hover {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: red; }
+      background-color: #cfc20c; }
 
 .card-animation {
   width: 234px; }
@@ -1028,7 +1065,26 @@ textarea {
     width: 45%; }
   .card-expand .card-content .card-left .card-img {
     width: 520px;
-    height: 360px; } }
+    height: 360px; }
+  .card-expand .card-content .card-right .card-close {
+    display: none; }
+  .section-portfolio .portfolio-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-portfolio .portfolio-nav .nav-item:before {
+      display: none; }
+  .section-portfolio .card-anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-portfolio .card-anchor .card-hover {
+      text-align: center; }
+      .section-portfolio .card-anchor .card-hover .middle-title {
+        margin: 20px 0 0; }
+      .section-portfolio .card-anchor .card-hover .subtitle {
+        margin-top: 15px;
+        color: #515151; } }
 
 @media screen and (min-width: 769px) {
   .header .close {
@@ -1115,3 +1171,6 @@ textarea {
 
 .section-tools .section-foreground {
   min-height: 470px; }
+
+.section-portfolio .section-foreground {
+  min-height: 1792px; }

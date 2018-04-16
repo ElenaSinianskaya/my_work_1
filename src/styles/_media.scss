@@ -101,10 +101,39 @@
           height: 360px;
         }
       }
+      .card-right{
+        .card-close{
+          display: none;
+        }
+      }
     }
   }
+ .section-portfolio{
+   .portfolio-nav{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     .nav-item:before{
+       display: none;
+     }
+   }
+    .card-anchor{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card-hover{
+        text-align: center;
+        .middle-title{
+          margin: 20px 0 0;
+        }
+        .subtitle{
+          margin-top: 15px;
+          color: $card-anchor-hover-media-color;
+        }
+      }
+    }
+ }
 }
-
 
 @media screen and (min-width:769px){
   .header{
