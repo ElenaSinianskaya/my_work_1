@@ -1030,6 +1030,10 @@ textarea {
         margin: 10px auto 25px; } }
 
 @media screen and (max-width: 768px) {
+  .middle-title {
+    text-align: center; }
+  .small-title {
+    text-align: center; }
   .header-body-right .nav {
     display: none; }
     .header-body-right .nav.active {
@@ -1063,21 +1067,33 @@ textarea {
       max-width: 80%; }
   .section-services .section-body .list-services .list-item {
     width: 45%; }
-  .card-expand .card-content .card-left .card-img {
-    width: 520px;
-    height: 360px; }
-  .card-expand .card-content .card-right .card-close {
-    display: none; }
   .section-portfolio .portfolio-nav {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .section-portfolio .portfolio-nav .nav-item:before {
       display: none; }
+  .section-portfolio .card-expand .card-content .card-left .card-img {
+    width: 100%;
+    height: 100%; }
+    .section-portfolio .card-expand .card-content .card-left .card-img img {
+      width: 320px;
+      height: 270px;
+      object-fit: cover; }
+  .section-portfolio .card-expand .card-content .card-right .card-close {
+    display: none; }
   .section-portfolio .card-anchor {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .section-portfolio .card-anchor .card-img {
+      width: 100%;
+      height: 100%;
+      text-align: center; }
+      .section-portfolio .card-anchor .card-img img {
+        width: 250px;
+        height: 200px;
+        object-fit: cover; }
     .section-portfolio .card-anchor .card-hover {
       text-align: center; }
       .section-portfolio .card-anchor .card-hover .middle-title {
