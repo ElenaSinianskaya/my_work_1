@@ -6,6 +6,28 @@
   }
 }
 
+@media screen and (max-width:1170px){
+  .section-about-us{
+    .list-about-us{
+      justify-content: space-evenly;
+      .card-right{
+        .card-description{
+          max-width: 370px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1130px){
+  .section-progress{
+    .list-progress li{
+      justify-content: center;
+      width: 50%;
+    }
+  }
+}
+
 @media screen and (max-width:1024px){
   .section-tools{
     .list-tools{
@@ -167,6 +189,15 @@
     }
     .nav{
       display: flex;
+    }
+  }
+}
+
+@media screen and (max-width:611px){
+  .section-progress{
+    .list-progress li{
+      justify-content: center;
+      width: 100%;
     }
   }
 }

@@ -84,7 +84,7 @@ table{
 }
 
 .secondary-small-title{
-  color:red;
+  color:$section-title-secondary-color;
 }
 
 .rarest-small-title{
@@ -112,6 +112,11 @@ table{
 .smaller-title{
   @include text_styles($card-title-primary-color, 20px, 700, uppercase);
   margin-bottom: 0;
+}
+
+.less-title{
+  @include text_styles($section-less-title-primary-color, 16px, 400, uppercase);
+  margin-bottom: 13px;
 }
 
 .section-inverse .smaller-title{
@@ -250,10 +255,13 @@ table{
         text-align: center;
         .card-icon{
           display: inline-flex;
-          padding: 33px;
           background-color: $icon-services-background;
           border: 1px solid $icon-services-border-color;
           border-radius: 60px;
+          width: 106px;
+          height: 107px;
+          align-items: center;
+          justify-content: center;
           cursor: pointer;
           .icon{
             font-size: 40px;
@@ -307,7 +315,6 @@ table{
       .card-title{
         margin-top: 70px;
       }
-
       .card-description{
         .text{
           margin: 20px 0;
@@ -466,7 +473,6 @@ table{
         }
       }
     }
-
     &:hover .card-hover{
       display: flex;
       flex-direction: column;
@@ -482,7 +488,87 @@ table{
   }
 }
 
+.section-progress{
+  .section-heading-title{
+    margin-top: 10px;
+    .small-title{
+      margin-bottom: 21px;
+    }
+  }
+  .section-text .text{
+    margin-top: 0;
+  }
+  .list-progress{
+    margin-top: 43px;
+    li{
+      overflow: hidden;
+    }
+  }
+}
 
+.card-progress{
+  width: 269px;
+  height: 141px;
+  border: 1px solid $card-border-primary-color;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  .card-value{
+    .counter{
+      @include text_styles($counter-primary-color, 37px, 700, uppercase);
+    }
+  }
+  .card-title{
+    text-align: center;
+   .smaller-title {
+      @include text_styles($section-smaller-title-rarest-color, 16px, 400, uppercase);
+      margin-top: 0px;
+   }
+  }
+ }
+
+.section-about-us{
+  .pre-title{
+    margin-top: 33px;
+  }
+  .list-about-us{
+    display: flex;
+    margin-top: 40px;
+    .card-about-us{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        .card-left{
+          width: 71px;
+          height: 71px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $icon-about-us-bg;
+          border-radius: 50px;
+          .icon{
+            color: $icon-about-us-color;
+            font-size: 30px;
+          }
+        }
+        .card-right{
+          margin-left: 28px;
+          .card-title{
+            margin-top: 40px;
+            margin-bottom: 8px;
+           }
+          .card-description{
+            max-width: 471px;
+            .text{
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 
 // circles
 .card-animation{

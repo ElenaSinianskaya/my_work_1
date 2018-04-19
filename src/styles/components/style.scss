@@ -1,33 +1,35 @@
 $icomoon-font-path: "../../fonts/fonts" !default;
 
-$icon-menu: "\e902";
-$icon-google: "\e90b";
-$icon-twitter: "\e905";
-$icon-chevrons-up: "\e90a";
-$icon-chevrons-left: "\e900";
-$icon-chevrons-right: "\e901";
-$icon-close: "\e903";
-$icon-dribbble: "\e906";
-$icon-cog: "\e907";
-$icon-gear: "\e907";
-$icon-angle-double-down: "\e908";
-$icon-home3: "\e909";
-$icon-pen: "\1f54f";
-$icon-camera: "\e90f";
-$icon-phone: "\e942";
-$icon-alarm: "\e950";
-$icon-bubble: "\e96b";
-$icon-css3: "\eae6";
-
+$icon-lifebuoy: '\e904';
+$icon-menu: '\e902';
+$icon-thumbs-up:'\e90d';
+$icon-google: '\e90b';
+$icon-twitter: '\e905';
+$icon-chevrons-up: '\e90a';
+$icon-chevrons-left: '\e900';
+$icon-chevrons-right: '\e901';
+$icon-close: '\e903';
+$icon-life-bouy: '\e90c';
+$icon-dribbble: '\e906';
+$icon-cog: '\e907';
+$icon-gear: '\e907';
+$icon-angle-double-down: '\e908';
+$icon-home3: '\e909';
+$icon-pen: '\1f54f';
+$icon-camera: '\e90f';
+$icon-phone: '\e942';
+$icon-alarm: '\e950';
+$icon-bubbles2: '\e96d';
+$icon-css3: '\eae6';
 
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?nw4gpy');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?nw4gpy#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?nw4gpy') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?nw4gpy') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?nw4gpy#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?b1csds');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?b1csds#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?b1csds') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?b1csds') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?b1csds#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,93 +49,112 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-lifebuoy {
+  &:before {
+    content: unicode($icon-lifebuoy);
+  }
+}
 .icon-menu {
   &:before {
-    content: $icon-menu;
+    content: unicode($icon-menu);
+  }
+}
+.icon-thumbs-up {
+  &:before {
+    content: unicode($icon-thumbs-up);
   }
 }
 .icon-google {
   &:before {
-    content: $icon-google;
+    content: unicode($icon-google);
   }
 }
 .icon-twitter {
   &:before {
-    content: $icon-twitter;
+    content: unicode($icon-twitter);
   }
 }
 .icon-chevrons-up {
   &:before {
-    content: $icon-chevrons-up;
+    content: unicode($icon-chevrons-up);
   }
 }
 .icon-chevrons-left {
   &:before {
-    content: $icon-chevrons-left;
+    content: unicode($icon-chevrons-left);
   }
 }
 .icon-chevrons-right {
   &:before {
-    content: $icon-chevrons-right;
+    content: unicode($icon-chevrons-right);
   }
 }
 .icon-close {
   &:before {
-    content: $icon-close;
+    content: unicode($icon-close);
+  }
+}
+.icon-life-bouy {
+  &:before {
+    content: unicode($icon-life-bouy);
   }
 }
 .icon-dribbble {
   &:before {
-    content: $icon-dribbble;
+    content: unicode($icon-dribbble);
   }
 }
 .icon-cog {
   &:before {
-    content: $icon-cog;
+    content: unicode($icon-cog);
   }
 }
 .icon-gear {
   &:before {
-    content: $icon-gear;
+    content: unicode($icon-gear);
   }
 }
 .icon-angle-double-down {
   &:before {
-    content: $icon-angle-double-down;
+    content: unicode($icon-angle-double-down);
   }
 }
 .icon-home3 {
   &:before {
-    content: $icon-home3;
+    content: unicode($icon-home3);
   }
 }
 .icon-pen {
   &:before {
-    content: $icon-pen;
+    content: unicode($icon-pen);
   }
 }
 .icon-camera {
   &:before {
-    content: $icon-camera;
+    content: unicode($icon-camera);
   }
 }
 .icon-phone {
   &:before {
-    content: $icon-phone;
+    content: unicode($icon-phone);
   }
 }
 .icon-alarm {
   &:before {
-    content: $icon-alarm;
+    content: unicode($icon-alarm);
   }
 }
-.icon-bubble {
+.icon-bubbles2 {
   &:before {
-    content: $icon-bubble;
+    content: unicode($icon-bubbles2);
   }
 }
 .icon-css3 {
   &:before {
-    content: $icon-css3;
+    content: unicode($icon-css3);
   }
 }

@@ -77,7 +77,7 @@ table {
   color: #000000; }
 
 .secondary-small-title {
-  color: red; }
+  color: #ffffff; }
 
 .rarest-small-title {
   color: #ffe600; }
@@ -107,6 +107,13 @@ table {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0; }
+
+.less-title {
+  color: #515151;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 13px; }
 
 .section-inverse .smaller-title {
   color: #ffffff; }
@@ -216,10 +223,13 @@ table {
     text-align: center; }
     .section-services .section-body .list .list-item .card-icon {
       display: inline-flex;
-      padding: 33px;
       background-color: #ffe600;
       border: 1px solid transparent;
       border-radius: 60px;
+      width: 106px;
+      height: 107px;
+      align-items: center;
+      justify-content: center;
       cursor: pointer; }
       .section-services .section-body .list .list-item .card-icon .icon {
         font-size: 40px; }
@@ -380,6 +390,73 @@ table {
       width: 100%;
       height: 100%;
       background-color: #cfc20c; }
+
+.section-progress .section-heading-title {
+  margin-top: 10px; }
+  .section-progress .section-heading-title .small-title {
+    margin-bottom: 21px; }
+
+.section-progress .section-text .text {
+  margin-top: 0; }
+
+.section-progress .list-progress {
+  margin-top: 43px; }
+  .section-progress .list-progress li {
+    overflow: hidden; }
+
+.card-progress {
+  width: 269px;
+  height: 141px;
+  border: 1px solid #ffe600;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; }
+  .card-progress .card-value .counter {
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .card-progress .card-title {
+    text-align: center; }
+    .card-progress .card-title .smaller-title {
+      color: #ffe600;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 0px; }
+
+.section-about-us .pre-title {
+  margin-top: 33px; }
+
+.section-about-us .list-about-us {
+  display: flex;
+  margin-top: 40px; }
+  .section-about-us .list-about-us .card-about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-about-us .list-about-us .card-about-us .card-left {
+      width: 71px;
+      height: 71px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffe600;
+      border-radius: 50px; }
+      .section-about-us .list-about-us .card-about-us .card-left .icon {
+        color: #ffffff;
+        font-size: 30px; }
+    .section-about-us .list-about-us .card-about-us .card-right {
+      margin-left: 28px; }
+      .section-about-us .list-about-us .card-about-us .card-right .card-title {
+        margin-top: 40px;
+        margin-bottom: 8px; }
+      .section-about-us .list-about-us .card-about-us .card-right .card-description {
+        max-width: 471px; }
+        .section-about-us .list-about-us .card-about-us .card-right .card-description .text {
+          margin: 0; }
 
 .card-animation {
   width: 234px; }
@@ -897,8 +974,8 @@ template {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/fonts/icomoon.eot?nw4gpy");
-  src: url("../../fonts/fonts/icomoon.eot?nw4gpy#iefix") format("embedded-opentype"), url("../../fonts/fonts/icomoon.ttf?nw4gpy") format("truetype"), url("../../fonts/fonts/icomoon.woff?nw4gpy") format("woff"), url("../../fonts/fonts/icomoon.svg?nw4gpy#icomoon") format("svg");
+  src: url("../../fonts/fonts/icomoon.eot?b1csds");
+  src: url("../../fonts/fonts/icomoon.eot?b1csds#iefix") format("embedded-opentype"), url("../../fonts/fonts/icomoon.ttf?b1csds") format("truetype"), url("../../fonts/fonts/icomoon.woff?b1csds") format("woff"), url("../../fonts/fonts/icomoon.svg?b1csds#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -915,8 +992,14 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-lifebuoy:before {
+  content: ""; }
+
 .icon-menu:before {
   content: ""; }
+
+.icon-thumbs-up:before {
+  content: ""; }
 
 .icon-google:before {
   content: ""; }
@@ -935,6 +1018,9 @@ i {
 
 .icon-close:before {
   content: ""; }
+
+.icon-life-bouy:before {
+  content: ""; }
 
 .icon-dribbble:before {
   content: ""; }
@@ -963,8 +1049,8 @@ i {
 .icon-alarm:before {
   content: ""; }
 
-.icon-bubble:before {
-  content: ""; }
+.icon-bubbles2:before {
+  content: ""; }
 
 .icon-css3:before {
   content: ""; }
@@ -1010,6 +1096,17 @@ textarea {
 @media screen and (max-width: 1919px) {
   .list-anchors .list-item {
     width: calc(100%/4); } }
+
+@media screen and (max-width: 1170px) {
+  .section-about-us .list-about-us {
+    justify-content: space-evenly; }
+    .section-about-us .list-about-us .card-right .card-description {
+      max-width: 370px !important; } }
+
+@media screen and (max-width: 1130px) {
+  .section-progress .list-progress li {
+    justify-content: center;
+    width: 50%; } }
 
 @media screen and (max-width: 1024px) {
   .section-tools .list-tools .list-item {
@@ -1110,6 +1207,11 @@ textarea {
   .header .nav {
     display: flex; } }
 
+@media screen and (max-width: 611px) {
+  .section-progress .list-progress li {
+    justify-content: center;
+    width: 100%; } }
+
 @media screen and (max-width: 558px) {
   .section-tools .list-tools .list-item {
     width: 45%; } }
@@ -1190,3 +1292,9 @@ textarea {
 
 .section-portfolio .section-foreground {
   min-height: 1792px; }
+
+.section-progress .section-foreground {
+  min-height: 402px; }
+
+.section-about-us .section-foreground {
+  min-height: 671px; }

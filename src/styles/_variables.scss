@@ -21,6 +21,12 @@ $section-title-primary-color:#000000;
 $section-title-secondary-color:#ffffff;
 $section-title-rarest-color:#ffe600;
 
+$section-smaller-title-primary-color:#000000;
+$section-smaller-title-secondary-color:#ffffff;
+$section-smaller-title-rarest-color:#ffe600;
+
+$section-less-title-primary-color:#515151;
+
 $section-pre-title-primary-color:#515151;
 
 $main-title-color:#ffffff;
@@ -55,9 +61,15 @@ $icon-services-background-hover:transparent;
 $icon-services-border-color:transparent;
 $icon-services-border-color-hover:#131316;
 $icon-services-color-hover:#ffe600;
+$icon-about-us-bg:#ffe600;
+$icon-about-us-color:#ffffff;
+
 
 $element-line-after-bg:#ffe600;
 
+$card-border-primary-color:#ffe600;
+
+$counter-primary-color:#ffffff;
 
 
 @mixin text_styles($color, $font-size, $font-weight, $text-transfortm){
